@@ -1,80 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@700&family=Lexend+Deca:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@700&family=Lexend+Deca:wght@300&display=swap");
 
-body{
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(212, 45%, 89%);
+  padding-top: 10vh;
+}
+
+.car-card--color {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.car-card--colorcyan {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.car-card--colordcyan {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.car-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 300px;
+  max-width: 300px;
+  border-radius: 10px;
+  padding: 40px;
+  gap: 50px;
+}
+
+.car-card__type {
+  font-family: "Big Shoulders Display", cursive;
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.car-card__description {
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 25px;
+  font-weight: 100;
+  color: white;
+  font-size: 15px;
+  width: 90%;
+}
+
+.learn-more {
+  border: none;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.learn-more--color {
+  color: hsl(31, 77%, 52%);
+}
+
+.learn-more--colorcyan {
+  color: hsl(184, 100%, 22%);
+}
+
+.learn-more--colordcyan {
+  color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 600px) {
+  body {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    font-family: 'Outfit', sans-serif;
-    background-color: hsl(212, 45%, 89%);
-    padding-top: 10vh;
-    
-}
-
-.car-card--color{
-    background-color: hsl(31, 77%, 52%);
-}
-
-.car-card--colorcyan{
-    background-color: hsl(184, 100%, 22%);
-}
-
-.car-card--colordcyan{
-    background-color: hsl(179, 100%, 13%);
-}
-
-.car-card{
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    min-width: 300px;
-    max-width: 300px;
-    border-radius: 10px;
-    padding: 40px;
-    gap: 50px;
-}
-
-.car-card__type{
-    font-family: 'Big Shoulders Display', cursive;
-    color:white;
-    font-size: 30px;  
-    text-transform:uppercase;
-}
-
-.car-card__description{
-    font-family: 'Lexend Deca', sans-serif;
-    line-height: 25px;
-    font-weight:100;
-    color:white;
-    font-size: 15px;
-    width: 90%;
-
-}
-
-.learn-more{
-    border:none;
-    width: 150px;
-    height: 40px;
-    border-radius: 20px;
-    font-size: 15px;
-}
-
-.learn-more--color{
-    color: hsl(31, 77%, 52%);
-}
-
-.learn-more--colorcyan{
-    color:hsl(184, 100%, 22%)
-}
-
-.learn-more--colordcyan{
-    color:hsl(179, 100%, 13%)
-}
-
-@media(min-width: 600px){
-    body{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    justify-content: center;}
+    justify-content: center;
+  }
 }
