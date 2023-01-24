@@ -8,10 +8,12 @@ body {
   font-family: "Outfit", sans-serif;
   background-color: hsl(212, 45%, 89%);
   padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .car-card--color {
   background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 10px 0 0;
 }
 
 .car-card--colorcyan {
@@ -20,6 +22,7 @@ body {
 
 .car-card--colordcyan {
   background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 0px 10px 10px;
 }
 
 .car-card {
@@ -28,7 +31,6 @@ body {
   align-items: flex-start;
   min-width: 300px;
   max-width: 300px;
-  border-radius: 10px;
   padding: 40px;
   gap: 50px;
 }
@@ -50,7 +52,7 @@ body {
 }
 
 .learn-more {
-  border: none;
+  border: solid 1px;
   width: 150px;
   height: 40px;
   border-radius: 20px;
@@ -61,12 +63,28 @@ body {
   color: hsl(31, 77%, 52%);
 }
 
+.learn-more--color:hover {
+  color: white;
+  background-color: hsl(31, 77%, 52%);
+}
+
 .learn-more--colorcyan {
   color: hsl(184, 100%, 22%);
 }
 
+.learn-more--colorcyan:hover {
+  color: white;
+  background-color: hsl(184, 100%, 22%);
+}
+
 .learn-more--colordcyan {
   color: hsl(179, 100%, 13%);
+}
+
+.learn-more--colordcyan:hover{
+  color: white;
+  background-color: hsl(179, 100%, 13%);
+
 }
 
 @media (min-width: 600px) {
@@ -76,4 +94,17 @@ body {
     align-items: center;
     justify-content: center;
   }
+
+  .car-card--color {
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .car-card--colorcyan {
+    border-radius: 0;
+  }
+  
+  .car-card--colordcyan {
+    border-radius: 0 10px 10px 0;
+  }
+
 }
